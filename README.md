@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dual Stream Logistics
 
 Safe. Secure. Temperature-Controlled.
@@ -67,6 +66,4 @@ npm run build:aab
 ```bash
 npm run lint
 ```
-=======
 # Dual-Stream-Logistics
->>>>>>> 912b3bdb8e919f7c76aac98de0b57e9028f4c6da
