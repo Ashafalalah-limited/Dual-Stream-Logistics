@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# Dual Stream Logistics
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Safe. Secure. Temperature-Controlled.
 
-## Get started
+Enterprise dark-mode logistics intelligence app built with Expo Router.
 
-1. Install dependencies
+## Demo modules included
 
-   ```bash
-   npm install
-   ```
+- Splash + secure authentication flow
+- Shipment Lifecycle Management
+- Cold Chain Compliance Monitoring
+- Fleet Visibility & Asset Control
+- Route / Network Visibility Map
+- Operational Intelligence & Reporting
+- Customer dashboard
+- Driver dashboard
+- Support pages (About, Contact, Help, Privacy, Terms)
 
-2. Start the app
+## Roles and access
 
-   ```bash
-   npx expo start
-   ```
+- Public signup roles: `customer`, `driver`
+- Admin is hidden and only available through internal credentials
+- Role cannot be changed after signup
 
-In the output, you'll find options to open the app in a
+Demo admin login:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Email: `ops.admin@dualstreamlogistics.com`
+- Password: `DSL-Internal-2026`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Run locally
 
 ```bash
-npm run reset-project
+npm install
+npm run start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Build Android APK (EAS)
 
-## Learn more
+1. Install EAS CLI:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install -g eas-cli
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. Login and configure project:
 
-## Join the community
+```bash
+eas login
+eas build:configure
+```
 
-Join our community of developers creating universal apps.
+3. Build APK (internal preview profile):
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run build:apk
+```
+
+4. Build Play Store AAB:
+
+```bash
+npm run build:aab
+```
+
+## Lint
+
+```bash
+npm run lint
+```
