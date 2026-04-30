@@ -1,4 +1,4 @@
-# Dual Stream Logistics
+# Temperature Chain Logistics
 
 Safe. Secure. Temperature-Controlled.
 
@@ -66,4 +66,4 @@ npm run build:aab
 ```bash
 npm run lint
 ```
-# Dual-Stream-Logistics
+# Temperature-Chain-Logistics-App
